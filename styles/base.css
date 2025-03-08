@@ -1,0 +1,52 @@
+h1 {
+    font-family: "Roboto Condensed";
+    font-weight: 500;
+}
+
+p {
+    font-family: "Roboto Condensed";
+    font-weight: 400;
+}
+header {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+}
+nav {
+    display: flex;
+    justify-content: center;
+}
+nav a {
+    background-color: #29343c;
+    color: #fff;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding: 10px;
+}
+nav a:hover {
+	text-decoration: overline;
+}
+main {
+    background-color: #29343c;
+    border-radius: 50px;
+    width: 550px;
+    padding-top: 5px;
+    padding-bottom: 50px;
+
+}
+section p{
+    display: flex;
+    justify-content: center;
+    padding-left: 80px;
+}
+img {
+    border-radius: 120px;
+    padding: 25px;
+}
+.card section {
+    float: right;
+}
+footer {
+    display: flex;
+    justify-content: center;
+}

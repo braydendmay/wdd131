@@ -5,3 +5,4 @@ document.addEventListener('DOMContentLoaded', () => {
     lastModified.textContent = currentDate.toLocaleDateString();
     currentyear.textContent = currentDate.toLocaleDateString();
 });
+

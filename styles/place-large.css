@@ -1,0 +1,51 @@
+@media screen and (min-width: 545px) {
+    #weather-icon {
+        display: none;
+    }
+
+    #weather-card h2::after {
+        content: "Weather ⛅️";
+    }
+
+    header {
+        border-bottom: none;
+    }
+
+    #data {
+        position: absolute;
+        top: 15vh;
+        left: 3vw;
+        border-top: none;
+        font-size: smaller;
+        background-color: #F1F1F1;
+        opacity: 0.8;
+        z-index: 1; 
+    }
+
+    #weather {
+        position: absolute;
+        bottom: 40vh;
+        right: 3vw;
+        border-top: none;
+        font-size: smaller;
+        background-color: #F1F1F1;
+        opacity: 0.8;
+        z-index: 1; 
+    }
+
+    #data h2, 
+    #weather h2 {
+        padding: 10px;
+        position: relative;
+        left: -50px;
+        text-align: left;
+        background-color: orange;
+        opacity: 1;
+        width: 8rem;
+        margin-top: 0; 
+    }
+
+    #data-card h2 {
+        left: -60px;
+    }
+}

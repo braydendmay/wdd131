@@ -1,16 +1,12 @@
 
-
-/*----------- BODY --------------*/
 body {
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
 }
 
-
-/*----------- HEADER --------------*/
 header {
     padding: .5rem 2%;
-    background-color: #367b92;
+    background-color: #10556c;
 }
 
 header h1 {
@@ -19,7 +15,7 @@ header h1 {
     text-align: center;
 }
 
-/*----------- MAIN --------------*/
+
 main {
     padding: 0 2%;
     min-height: 20rem;
@@ -31,16 +27,12 @@ main {
     text-align: center;
 }
 
-/*----------- FORM STYLING --------------*/
-
-
 .wf1 fieldset {
     margin: 2rem 0;
     border: 1px solid #ddd;
     border-radius: 6px;
     padding: .5rem 2%;
 }
-
 
 .wf1 label {
     display: block;
@@ -55,7 +47,6 @@ main {
     font-size: 14px;
     font-weight: 600;
 }
-
 
 .wf1 input[type="date"],
 .wf1 select
@@ -73,7 +64,6 @@ main {
     margin-bottom: 10px;
 }
 
-
 .wf1 input[type="text"]
 {
     background-color: #eee;
@@ -88,7 +78,6 @@ main {
     margin-top: 5px;
     margin-bottom: 10px;
 }
-
 
 .wf1 textarea
 {
@@ -146,15 +135,11 @@ main {
     margin-bottom: 10px;
 }
 
-
-/*----------- STARS --------------*/
-
 input[type="radio"] {
 	display: none;
 	position: relative;
 	caret-color: rgba(0, 0, 0, 0);
 }
-
 
 .stars > label {
 	color: #f5ce32;
@@ -164,7 +149,7 @@ input[type="radio"] {
 	margin-left: 5px;
 	display: flex;
 	align-items: center;
-	caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
+	caret-color: rgba(0, 0, 0, 0);
 }
 
 .stars > label:hover {
@@ -179,12 +164,10 @@ input[type="radio"] {
 	content: "\2605";
 }
 
-
-/*----------- FOOTER --------------*/
 footer {
-    background-color: #6eb0c8;
+    background-color: #10556c;
     padding: .5rem 2%;
     text-align: center;
-    color: #000;
+    color: #ffffff;
     font-size: 14px;
 }

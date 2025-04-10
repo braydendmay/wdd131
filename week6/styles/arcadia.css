@@ -19,7 +19,14 @@ header {
     box-shadow: 0 0 30px #333;
     color: white;
 }
-
+header{
+    display: grid;
+    display: flex;
+}
+header img {
+    width: 150px;
+    height: auto;
+}
 header, main {
     margin: auto;
 }

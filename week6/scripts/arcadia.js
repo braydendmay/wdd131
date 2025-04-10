@@ -27,11 +27,11 @@ hamButton.addEventListener('click', () => {
 	hamButton.classList.toggle('open');
 });
 
-const temples = [
+const games = [
     {
       gameName: "Pac Man",
       cost: ".25",
-      dedicated: "2005, August, 7",
+      highScore: 120000,
       area: 11500,
       imageUrl:
       "https://th.bing.com/th/id/OIP.M-ALHinabbcLQZRk-QDarwHaEL?w=300&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
@@ -39,7 +39,7 @@ const temples = [
     {
       gameName: "Pac Man",
       cost: ".25",
-      dedicated: "1888, May, 21",
+      highScore: 120000,
       area: 74792,
       imageUrl:
       "https://th.bing.com/th/id/OIP.M-ALHinabbcLQZRk-QDarwHaEL?w=300&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
@@ -47,7 +47,7 @@ const temples = [
     {
       gameName: "Pac Man",
       cost: ".25",
-      dedicated: "2002, May, 17",
+      highScore: 120000,
       area: 49100,
       imageUrl:
       "https://th.bing.com/th/id/OIP.M-ALHinabbcLQZRk-QDarwHaEL?w=300&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
@@ -55,7 +55,7 @@ const temples = [
     {
       gameName: "Pac Man",
       cost: ".25",
-      dedicated: "2020, May, 2",
+      highScore: 120000,
       area: 6861,
       imageUrl:
       "https://th.bing.com/th/id/OIP.M-ALHinabbcLQZRk-QDarwHaEL?w=300&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
@@ -63,7 +63,7 @@ const temples = [
     {
       gameName: "Pac Man",
       cost: ".25",
-      dedicated: "1974, November, 19",
+      highScore: 120000,
       area: 156558,
       imageUrl:
       "https://th.bing.com/th/id/OIP.M-ALHinabbcLQZRk-QDarwHaEL?w=300&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
@@ -71,7 +71,7 @@ const temples = [
     {
       gameName: "Pac Man",
       cost: ".25",
-      dedicated: "1986, January, 10",
+      highScore: 120000,
       area: 9600,
       imageUrl:
       "https://th.bing.com/th/id/OIP.M-ALHinabbcLQZRk-QDarwHaEL?w=300&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
@@ -79,7 +79,7 @@ const temples = [
     {
       gameName: "Pac Man",
       cost: ".25",
-      dedicated: "1983, December, 2",
+      highScore: 120000,
       area: 116642,
       imageUrl:
       "https://th.bing.com/th/id/OIP.M-ALHinabbcLQZRk-QDarwHaEL?w=300&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
@@ -87,7 +87,7 @@ const temples = [
     {
       gameName: "Pac Man",
       cost: ".25",
-        dedicated: "2010, May, 2",
+      highScore: 120000,
         area: 28165,
         imageUrl:
         "https://th.bing.com/th/id/OIP.M-ALHinabbcLQZRk-QDarwHaEL?w=300&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
@@ -95,7 +95,7 @@ const temples = [
       {
         gameName: "Pac Man",
         cost: ".25",
-        dedicated: "2004, June, 13",
+        highScore: 120000,
         area: 20630,
         imageUrl:
         "https://th.bing.com/th/id/OIP.M-ALHinabbcLQZRk-QDarwHaEL?w=300&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
@@ -103,7 +103,7 @@ const temples = [
       {
         gameName: "Pac Man",
         cost: ".25",
-        dedicated: "2017, November, 19",
+        highScore: 120000,
         area: 67331,
         imageUrl:
         "https://th.bing.com/th/id/OIP.M-ALHinabbcLQZRk-QDarwHaEL?w=300&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
@@ -136,45 +136,46 @@ const temples = [
             figcaption.innerHTML = `
                 <h3>${game.gameName}</h3>
                 <p>Cost: ${game.cost}</p>
-                <p>Dedicated: ${formatDate(game.dedicated)}</p>
-                <p>Area: ${game.area.toLocaleString()} sq ft</p>
-            `;
+                <p>High Score: ${game.highScore}</p>`;
+                //<p>Dedicated: ${formatDate(game.dedicated)}</p>
+                //<p>Area: ${game.area.toLocaleString()} sq ft</p>
+            //`;
             figure.appendChild(figcaption);
 
             container.appendChild(figure);
         });
     };
 
-    const formatDate = (dateString) => {
-        const date = new Date(dateString);
-        const year = date.getFullYear();
-        const month = date.toLocaleString('default', { month: 'long' });
-        const day = date.getDate();
-        return `${year}, ${month}, ${day}`;
-    };
+//    const formatDate = (dateString) => {
+//        const date = new Date(dateString);
+//        const year = date.getFullYear();
+//        const month = date.toLocaleString('default', { month: 'long' });
+//        const day = date.getDate();
+//        return `${year}, ${month}, ${day}`;
+//    };
 
-    homeLink.addEventListener('click', () => displayGames(temples));
+    homeLink.addEventListener('click', () => displayGames(games));
 
-    oldLink.addEventListener('click', () => {
-        const oldTemples = games.filter(game => new Date(temple.dedicated).getFullYear() < 1900);
-        displayGames(oldTemples);
-    });
-
-    newLink.addEventListener('click', () => {
-        const newTemples = games.filter(game => new Date(temple.dedicated).getFullYear() > 2000);
-        displayGames(newTemples);
-    });
-
-    largeLink.addEventListener('click', () => {
-        const largeTemples = games.filter(game => temple.area > 90000);
-        displayGames(largeTemples);
-    });
-
-    smallLink.addEventListener('click', () => {
-        const smallTemples = games.filter(game => temple.area < 10000);
-        displayGames(smallTemples);
-    });
+//    oldLink.addEventListener('click', () => {
+//        const oldTemples = games.filter(game => new Date(game.dedicated).getFullYear() < 1900);
+//        displayGames(oldTemples);
+//    });
+//
+//    newLink.addEventListener('click', () => {
+//        const newTemples = games.filter(game => new Date(game.dedicated).getFullYear() > 2000);
+//        displayGames(newTemples);
+//    });
+//
+//    largeLink.addEventListener('click', () => {
+//        const largeTemples = games.filter(game => game.area > 90000);
+//        displayGames(largeTemples);
+//    });
+//
+//    smallLink.addEventListener('click', () => {
+//        const smallTemples = games.filter(game => game.area < 10000);
+//        displayGames(smallTemples);
+//    });
 
     // Display all temples by default when the page loads
-    displayGames(temples);
+    displayGames(games);
 });

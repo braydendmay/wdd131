@@ -1,0 +1,136 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* HEADER */
+
+header {
+    background-color: #19174B;
+    display: grid;
+    grid-gap: 1rem;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 30px #333;
+    color: white;
+}
+
+header, main {
+    margin: auto;
+}
+
+.navigation {
+    display: none;
+}
+
+/* Small view navigation and BUTTON hamburguer menu */
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: white;
+ 	position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.navigation.open {
+	display: block;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: yellow;
+    font-weight: 800;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3558e4;
+    font-size: 28px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    margin: 1rem auto;
+    max-width: 400px;
+}
+
+figure {
+    padding: 20px;
+    position: relative;
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+figcaption {
+    text-align: center;
+    background-color: rgba(5, 40, 105, 0.731);
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+img {
+    width: 360px;
+}
+
+.hover:hover {
+    box-shadow: 0 0 10px #333;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #19174B;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.highlight {
+    color: rgb(0, 255, 247);
+}

@@ -1,0 +1,162 @@
+
+body {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+}
+img {
+    width: 250px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+header {
+    padding: 2rem 2%;
+    background-color: #10556c;
+    display: flex;
+    justify-content: center;
+
+}
+h1 {
+    display: flex;
+    justify-content: center;
+}
+header h1 {
+    margin: 0;
+    color: #ffffff;
+    text-align: center;
+}
+
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.navigation {
+    display: none;
+}
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: white;
+ 	position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.navigation.open {
+	display: block;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: yellow;
+    font-weight: 800;
+}
+.thanks-page {
+    text-align: center;
+}
+
+.wf1 fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.wf1 label {
+    display: block;
+    padding-top: 1rem;
+    color: black;
+    font-size: 12px;
+}
+
+.wf1 label {
+    padding-top: 1rem;
+    color: #367b92;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.wf1 input[type="text"]
+{
+    background-color: #eee;
+    display: block;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 300px;
+    appearance: none;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.wf1 textarea
+{
+    background-color: #eee;
+    display: block;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 300px;
+    appearance: none;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.wf1 input[type="radio"],
+.wf1 input[type="checkbox"]{
+    margin-right: 6px;
+}
+
+.wf1 input[type="submit"]{
+    border: none;
+    background-image: linear-gradient(#ffcc00, #c29c04);
+    color: #fff;
+    border-radius: 6px;
+    padding: .10rem;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+}
+
+
+
+footer {
+    background-color: #10556c;
+    padding: .5rem 2%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+}

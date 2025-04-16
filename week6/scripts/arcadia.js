@@ -32,81 +32,71 @@ const games = [
       gameName: "Pac Man",
       cost: ".25",
       highScore: 120000,
-      area: 11500,
       imageUrl:
       "https://th.bing.com/th/id/OIP.M-ALHinabbcLQZRk-QDarwHaEL?w=300&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
     },
     {
-      gameName: "Pac Man",
-      cost: ".25",
+      gameName: "Street Fighter 2",
+      cost: ".50",
       highScore: 120000,
-      area: 74792,
       imageUrl:
-      "https://th.bing.com/th/id/OIP.M-ALHinabbcLQZRk-QDarwHaEL?w=300&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+      "https://th.bing.com/th/id/OIP.B1OngHObSv99PoDeUlKI-wHaHU?w=198&h=196&c=7&r=0&o=5&dpr=1.5&pid=1.7"
     },
     {
-      gameName: "Pac Man",
+      gameName: "Mario Bros",
       cost: ".25",
       highScore: 120000,
-      area: 49100,
       imageUrl:
-      "https://th.bing.com/th/id/OIP.M-ALHinabbcLQZRk-QDarwHaEL?w=300&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+      "https://th.bing.com/th/id/OIP.rH29izdTzbM7fiy9PyvkqQHaKL?w=132&h=181&c=7&r=0&o=5&dpr=1.5&pid=1.7"
     },
     {
-      gameName: "Pac Man",
-      cost: ".25",
+      gameName: "Halo 2",
+      cost: "1.00",
       highScore: 120000,
-      area: 6861,
       imageUrl:
-      "https://th.bing.com/th/id/OIP.M-ALHinabbcLQZRk-QDarwHaEL?w=300&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+      "https://th.bing.com/th/id/OIP.oXahGCXNfkM5YZT6yxM-CwAAAA?w=139&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
     },
     {
-      gameName: "Pac Man",
+      gameName: "Frogger",
       cost: ".25",
       highScore: 120000,
-      area: 156558,
       imageUrl:
-      "https://th.bing.com/th/id/OIP.M-ALHinabbcLQZRk-QDarwHaEL?w=300&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+      "https://th.bing.com/th?q=Frogger+Arcade+Art&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.5&pid=InlineBlock&mkt=en-CA&cc=CA&setlang=en&adlt=strict&t=1&mw=247"
     },
     {
-      gameName: "Pac Man",
+      gameName: "Crossy Road",
       cost: ".25",
       highScore: 120000,
-      area: 9600,
       imageUrl:
-      "https://th.bing.com/th/id/OIP.M-ALHinabbcLQZRk-QDarwHaEL?w=300&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+      "https://th.bing.com/th/id/OIP.5ES1eRVa_bZn9sTi1oApBwHaHa?w=164&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
     },
     {
-      gameName: "Pac Man",
+      gameName: "Galaga",
       cost: ".25",
       highScore: 120000,
-      area: 116642,
       imageUrl:
-      "https://th.bing.com/th/id/OIP.M-ALHinabbcLQZRk-QDarwHaEL?w=300&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+      "https://th.bing.com/th/id/OIP.AQUpM7iPVOrVr8xOeEH8VAHaEK?w=283&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
     },
     {
-      gameName: "Pac Man",
+      gameName: "Donkey Kong",
       cost: ".25",
       highScore: 120000,
-        area: 28165,
-        imageUrl:
-        "https://th.bing.com/th/id/OIP.M-ALHinabbcLQZRk-QDarwHaEL?w=300&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+      imageUrl:
+      "https://th.bing.com/th/id/OIP.8EhCW3YsMgOQY2wYl9cveAHaFj?rs=1&pid=ImgDetMain"
       },
       {
-        gameName: "Pac Man",
+        gameName: "Forza Horizon 4",
         cost: ".25",
         highScore: 120000,
-        area: 20630,
         imageUrl:
-        "https://th.bing.com/th/id/OIP.M-ALHinabbcLQZRk-QDarwHaEL?w=300&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+        "https://th.bing.com/th/id/R.d687ab9019494ac2a2544d2651e3a348?rik=skqasK5GWUYLkQ&pid=ImgRaw&r=0"
       },
       {
-        gameName: "Pac Man",
+        gameName: "Doom 2",
         cost: ".25",
         highScore: 120000,
-        area: 67331,
         imageUrl:
-        "https://th.bing.com/th/id/OIP.M-ALHinabbcLQZRk-QDarwHaEL?w=300&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+        "https://th.bing.com/th/id/OIP.aWhvXL4rj3nn171fLg3lJgHaEK?rs=1&pid=ImgDetMain"
       },
   ];
 

@@ -14,17 +14,17 @@ header {
     background-color: #19174B;
     display: grid;
     grid-gap: 1rem;
-    padding: 20px;
+    padding: 0px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 30px #333;
     color: white;
 }
 header{
-    display: grid;
     display: flex;
+    justify-content: center;
 }
 header img {
-    width: 150px;
+    width: 300px;
     height: auto;
 }
 header, main {
